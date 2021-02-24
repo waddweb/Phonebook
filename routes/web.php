@@ -14,15 +14,12 @@ use App\Http\Controllers\MainController;
 |
 */
 
+/* Route::resource('/', MainController::class); */
 
-/* Route::get('/', 'MainController@index')->name('home'); */
+Route::get('/search', 'App\Http\Controllers\MainController@search')->name('search');
+Route::get('/', 'App\Http\Controllers\MainController@index')->name('home');
 
-Route::resource('/', MainController::class);
+/* Route::get('/', 'App\Http\Controllers\MainController@index'); */
 
-/* Route::get('/', function () {
-    return view('home');
-}); */
+/* Route::get('/', MainController::class, 'index')->name('home'); */
 
-/* Route::get('/', function () {
-    return view('welcome');
-}); */

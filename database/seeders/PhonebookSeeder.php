@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Phonebook;
 use Illuminate\Database\Seeder;
+
 
 class PhonebookSeeder extends Seeder
 {
@@ -13,6 +15,6 @@ class PhonebookSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Phonebook::factory(100)->create();
+        Phonebook::factory(100)->create();
     }
 }

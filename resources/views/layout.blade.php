@@ -10,7 +10,7 @@
 
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
-		<a class="navbar-brand" href="/">Phonebook / CRUD-Laravel8-App</a>
+		<a class="navbar-brand" href="{{ route('home') }}">Phonebook / CRUD-Laravel8-App</a>
 	</nav>
 
 	<div class="container">
@@ -19,10 +19,10 @@
 
 			<div class="col-md-12">
 
-				<form>
+				<form method="get" action="{{ route('search') }}">
 					<div class="form-row">
 						<div class="form-group col-md-10">
-							<input type="text" class="form-control" id="q" name="q" placeholder="Search...">
+							<input type="text" class="form-control" id="s" name="s" placeholder="Search...">
 						</div>
 						<div class="form-group col-md-2">
 							<button type="submit" class="btn btn-primary btn-block">Search</button>
